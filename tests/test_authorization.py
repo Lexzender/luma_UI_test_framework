@@ -1,13 +1,16 @@
+import time
+
 import allure
 import pytest
 from selene import browser
 from selene import be, have, query
+import os
 
 from luma_UI_test_framework.pages.authorization_page import Authorization
 from tests.conftest import base_url
 
-login = "xichnek123@gmail.com"
-password = "qwerty123Q"
+login = os.getenv("login_luma")
+password = os.getenv("password_luma")
 
 authorization = Authorization()
 

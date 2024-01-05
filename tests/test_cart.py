@@ -1,3 +1,5 @@
+import os
+
 from selene import browser
 from selene import be, have, query
 
@@ -8,8 +10,8 @@ from tests.conftest import base_url
 import allure
 import pytest
 
-login = "xichnek123@gmail.com"
-password = "qwerty123Q"
+login = os.getenv("login_luma")
+password = os.getenv("password_luma")
 
 authorization = Authorization()
 cart = Cart()

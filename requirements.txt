@@ -1,5 +1,6 @@
-pytest==7.4.3
+pytest~=7.3.1
 allure-pytest==2.13.2
-selene==2.0.0rc4
+selene>=2.0.0b4
 requests==2.31.0
 selenium~=4.15.2
+python-dotenv==0.20.0
