@@ -18,7 +18,7 @@ product = SearchItem()
 
 
 @pytest.mark.cart
-@allure.tag("web")
+@allure.label('layer', 'web')
 @allure.label("owner", "Kostromin")
 @allure.feature("Корзина")
 @allure.story("Добавление товара в корзину")
@@ -46,7 +46,7 @@ def test_add_item_to_cart():
 
 
 @pytest.mark.cart
-@allure.tag("web")
+@allure.label('layer', 'web')
 @allure.label("owner", "Kostromin")
 @allure.feature("Корзина")
 @allure.story("Удаление товара из корзины")

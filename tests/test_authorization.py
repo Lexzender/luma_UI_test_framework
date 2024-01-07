@@ -14,7 +14,7 @@ authorization = Authorization()
 
 
 @pytest.mark.authorization
-@allure.tag("web")
+@allure.label('layer', 'web')
 @allure.label("owner", "Kostromin")
 @allure.feature("Авторизация")
 @allure.story("Авторизация существующего пользователя")

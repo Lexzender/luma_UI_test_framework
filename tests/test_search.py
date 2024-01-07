@@ -13,7 +13,7 @@ password = "qwerty123Q"
 
 
 @pytest.mark.search
-@allure.tag("web")
+@allure.label('layer', 'web')
 @allure.label("owner", "Kostromin")
 @allure.feature("Поиск")
 @allure.story("Поиск товара")
@@ -36,7 +36,7 @@ def test_search(item):
 
 
 @pytest.mark.search
-@allure.tag("web")
+@allure.label('layer', 'web')
 @allure.label("owner", "Kostromin")
 @allure.feature("Поиск")
 @allure.story("Сортировка товара по фильтру")
@@ -59,7 +59,7 @@ def test_search_coast_filter():
 
 
 @pytest.mark.search
-@allure.tag("web")
+@allure.label('layer', 'web')
 @allure.label("owner", "Kostromin")
 @allure.feature("Поиск")
 @allure.story("Добавление товара в список 'желаний'")
@@ -86,7 +86,7 @@ def test_add_item_in_wish_list():
 
 
 @pytest.mark.search
-@allure.tag("web")
+@allure.label('layer', 'web')
 @allure.label("owner", "Kostromin")
 @allure.feature("Поиск")
 @allure.story("Добавление товара в список 'желаний' неавторизованным пользователем")
