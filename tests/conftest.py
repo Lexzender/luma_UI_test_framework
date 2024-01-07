@@ -9,17 +9,20 @@ from selenium.webdriver.chrome.options import Options
 
 from luma_UI_test_framework.utils import allure_attach
 
-base_url = os.getenv('BASE_URL')
+base_url = "https://magento.softwaretestingboard.com"
 
 DEFAULT_BROWSER_VERSION = '100.0'
 
 
 def pytest_addoption(parser):
-    parser.addoption(
-        "--browser_version",
-        default="100.0"
-
-    )
+   parser.addoption(
+       "--browser_version",
+       default="100.0",
+   )
+   parser.addoption(
+       "--base_url",
+       default="https://magento.softwaretestingboard.com"
+   )
 
 
 @pytest.fixture(scope='session', autouse=True)
