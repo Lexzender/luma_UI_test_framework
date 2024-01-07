@@ -9,7 +9,7 @@ from selenium.webdriver.chrome.options import Options
 
 from luma_UI_test_framework.utils import allure_attach
 
-base_url = "https://magento.softwaretestingboard.com"
+base_url = os.getenv('BASE_URL')
 
 DEFAULT_BROWSER_VERSION = '100.0'
 
