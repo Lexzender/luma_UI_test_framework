@@ -1,5 +1,7 @@
-from selene import browser, have, be
 import allure
+from selene import browser, be
+
+
 class Authorization:
 
     def __init__(self):
@@ -8,7 +10,7 @@ class Authorization:
     def open_main_page(self):
         browser.open('/')
 
-    def user_login(self,login,password):
+    def user_login(self, login, password):
         with allure.step("Нажать на кнопку 'Sign in'"):
             browser.element(".authorization-link").click()
 

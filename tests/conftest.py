@@ -1,32 +1,41 @@
-import allure
 import os
+
+import allure
 import pytest
 from dotenv import load_dotenv
 from selene import browser
-from selenium.webdriver.chrome.options import Options
-from luma_UI_test_framework.utils import allure_attach
 from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+
+from luma_UI_test_framework.utils import allure_attach
 
 base_url = "https://magento.softwaretestingboard.com"
 
 DEFAULT_BROWSER_VERSION = '100.0'
 
+
 def pytest_addoption(parser):
     parser.addoption(
         "--browser_version",
-        default = "100.0"
+        default="100.0"
 
     )
+
 
 @pytest.fixture(scope='session', autouse=True)
 def load_env():
     load_dotenv()
+
 
 @pytest.fixture(scope="function", autouse=True)
 def browser_config(request):
     browser_version = request.config.getoption("--browser_version")
     browser_version = browser_version if browser_version != '' else DEFAULT_BROWSER_VERSION
     options = Options()
+    options.add_argument("--disable-gpu")
+    options.add_argument("--no-sandbox")
+    options.add_argument("--disable-dev-shm-usage")
+    options.add_argument("--incognito")
     selenoid_capabilities = {
         "browserName": "chrome",
         "browserVersion": browser_version,

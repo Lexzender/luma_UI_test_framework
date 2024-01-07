@@ -1,5 +1,6 @@
-from selene import browser, have, be, query
 import allure
+from selene import browser, have, be, query
+
 
 class SearchItem:
 
@@ -16,7 +17,7 @@ class SearchItem:
     def open_main_page(self):
         browser.open('/')
 
-    def search(self,item):
+    def search(self, item):
         with allure.step('Кликнуть по полю "Поиск"'):
             browser.element(".search").click()
 
@@ -25,8 +26,7 @@ class SearchItem:
 
         self.result_search = browser.element('.base')
 
-
-    def sort_by(self,value):
+    def sort_by(self, value):
         with allure.step('Кликнуть по фильтру'):
             browser.element("#sorter").click()
 
@@ -35,7 +35,6 @@ class SearchItem:
 
         self.price_item_first = float(browser.all(".product-items li .price")[0].get(query.text).strip("$"))
         self.price_item_last = float(browser.all(".product-items li .price")[11].get(query.text).strip("$"))
-
 
     def add_item_in_wish_list(self):
         with allure.step('Кликнуть по карточке с товаром'):
@@ -67,7 +66,7 @@ class SearchItem:
         with allure.step('Добавить товар в wishlist'):
             browser.element(".action.towishlist").click()
 
-        self.page_title_wrapper = browser.element(".page-title-wrapper")#.should(be.visible).should(have.text("Customer Login"))
-        self.error_message = browser.element(".page.messages")#.should(be.visible).should(
-            #have.text("You must login or register to add items to your wishlist."))
-
+        self.page_title_wrapper = browser.element(
+            ".page-title-wrapper")  # .should(be.visible).should(have.text("Customer Login"))
+        self.error_message = browser.element(".page.messages")  # .should(be.visible).should(
+        # have.text("You must login or register to add items to your wishlist."))

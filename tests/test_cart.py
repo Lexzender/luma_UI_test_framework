@@ -1,14 +1,13 @@
 import os
 
-from selene import browser
-from selene import be, have, query
+import allure
+import pytest
+from selene import be, have
 
 from luma_UI_test_framework.pages.authorization_page import Authorization
 from luma_UI_test_framework.pages.cart_page import Cart
 from luma_UI_test_framework.pages.search_page import SearchItem
 from tests.conftest import base_url
-import allure
-import pytest
 
 login = os.getenv("login_luma")
 password = os.getenv("password_luma")
@@ -16,6 +15,7 @@ password = os.getenv("password_luma")
 authorization = Authorization()
 cart = Cart()
 product = SearchItem()
+
 
 @pytest.mark.cart
 @allure.tag("web")
@@ -43,6 +43,7 @@ def test_add_item_to_cart():
     with allure.step("Проверяем, что товар добавился"):
         cart.name_item.should(have.text("Erika Running Short")).should(be.visible)
         cart.counter_items.should(be.visible).should(have.text("1"))
+
 
 @pytest.mark.cart
 @allure.tag("web")

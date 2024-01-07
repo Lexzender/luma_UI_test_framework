@@ -1,5 +1,5 @@
 import allure
-import requests
+
 
 def page_source_xml(browser):
     allure.attach(

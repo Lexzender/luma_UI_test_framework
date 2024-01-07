@@ -1,7 +1,7 @@
 import time
 
-from selene import browser, have, be, query
 import allure
+from selene import browser, be
 
 
 class Cart:
@@ -27,7 +27,6 @@ class Cart:
         with allure.step("Добавить товар в корзину"):
             browser.element(".action.primary.tocart").click()
 
-
         with allure.step("Кликнуть по значку 'Корзина'"):
             time.sleep(5)
             browser.element(".action.showcart").click()
@@ -37,6 +36,7 @@ class Cart:
 
     def delet_item_to_cart(self):
         with allure.step("Кликнуть по значку 'Корзина'"):
+            time.sleep(5)
             browser.element(".action.showcart").should(be.visible).click()
 
         with allure.step("Открыть страницу с корзиной"):
