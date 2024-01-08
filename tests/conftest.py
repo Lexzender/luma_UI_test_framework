@@ -26,7 +26,7 @@ def pytest_addoption(parser):
    parser.addoption(
        "--browserName",
        default="chrome",
-       choices=['firefox', 'opera']
+       choices=['firefox', 'opera','chrome']
    )
 
 
