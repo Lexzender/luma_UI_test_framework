@@ -23,6 +23,11 @@ def pytest_addoption(parser):
        "--base_url",
        default="https://magento.softwaretestingboard.com"
    )
+   parser.addoption(
+       "--browserName",
+       default="chrome",
+       choices=['firefox', 'opera']
+   )
 
 
 @pytest.fixture(scope='session', autouse=True)
@@ -34,13 +39,14 @@ def load_env():
 def browser_config(request):
     browser_version = request.config.getoption("--browser_version")
     browser_version = browser_version if browser_version != '' else DEFAULT_BROWSER_VERSION
+    browserName = request.config.getoption("--browserName")
     options = Options()
     options.add_argument("--disable-gpu")
     options.add_argument("--no-sandbox")
     options.add_argument("--disable-dev-shm-usage")
     options.add_argument("--incognito")
     selenoid_capabilities = {
-        "browserName": "chrome",
+        "browserName":browserName,
         "browserVersion": browser_version,
         "selenoid:options": {
             "enableVNC": True,
