@@ -46,7 +46,7 @@ def browser_config(request):
     options.add_argument("--disable-dev-shm-usage")
     options.add_argument("--incognito")
     selenoid_capabilities = {
-        "browserName":browserName,
+        "browserName": "chrome",
         "browserVersion": browser_version,
         "selenoid:options": {
             "enableVNC": True,

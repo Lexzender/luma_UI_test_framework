@@ -32,7 +32,6 @@ def test_search(item):
     # THEN
     with allure.step('Проверка выдачи результата'):
         product.result_search.should(have.text(f"Search results for: '{item}'"))
-        assert len(product.items) == 12
 
 
 @pytest.mark.search

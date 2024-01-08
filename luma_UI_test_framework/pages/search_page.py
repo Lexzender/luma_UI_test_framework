@@ -50,15 +50,6 @@ class SearchItem:
 
         self.name_in_wish_list = browser.element(".product-items").element(".product-item-name")
 
-    # def add_item_in_wish_list(self):
-    #     with allure.step('Кликнуть по карточке с товаром'):
-    #         browser.element(".product-items li").click()
-    #
-    #     self.item = browser.element(".page-title").get(query.text)
-    #     browser.element(".action.towishlist").click()
-    #     browser.element(".page-title").should(have.text("My Wish List")).should(be.visible)
-    #     self.name_in_wish_list = browser.element(".product-items").element(".product-item-name")
-
     def chek_error_You_must_login_or_register_to_add_items_to_your_wishlist(self):
         with allure.step('Кликнуть по карточке с товаром'):
             browser.element(".product-items li").click()
@@ -67,6 +58,5 @@ class SearchItem:
             browser.element(".action.towishlist").click()
 
         self.page_title_wrapper = browser.element(
-            ".page-title-wrapper")  # .should(be.visible).should(have.text("Customer Login"))
-        self.error_message = browser.element(".page.messages")  # .should(be.visible).should(
-        # have.text("You must login or register to add items to your wishlist."))
+            ".page-title-wrapper")
+        self.error_message = browser.element(".page.messages")
