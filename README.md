@@ -60,16 +60,16 @@ https://github.com/Lexzender/luma_UI_test_framework/assets/106764385/89c32aa1-79
 
 ---
 ## Интеграция с Allure TestOps
-Тест кейсы
+### Тест кейсы
 <img align="center" src="https://github.com/Lexzender/luma_UI_test_framework/blob/main/luma_UI_test_framework/pictures/test%20cases.png" />
 
-Дашборд
+### Дашборд
 <img align="center" src="https://github.com/Lexzender/luma_UI_test_framework/blob/main/luma_UI_test_framework/pictures/dashboards.png" />
 
-История запусков
+### История запусков
 <img align="center" src="https://github.com/Lexzender/luma_UI_test_framework/blob/main/luma_UI_test_framework/pictures/Launches.png" />
 
-Тестовые артефакты
+### Тестовые артефакты
 <img align="center" src="https://github.com/Lexzender/luma_UI_test_framework/blob/main/luma_UI_test_framework/pictures/test_results.png" />
 
 ---
