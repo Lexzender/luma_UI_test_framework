@@ -41,3 +41,17 @@ pytest -s -v --browser_version=${BROWSER_VERSION}  --base_url=${BASE_URL} --brow
 4) Нажать "Build"
 <img align="center" src="https://github.com/Lexzender/luma_UI_test_framework/blob/main/luma_UI_test_framework/pictures/jenkins.png" />
 
+---
+
+## Allure report
+После прохождения тестов, результаты можно посмотреть в Allure отчете
+<img align="center" src="https://github.com/Lexzender/luma_UI_test_framework/blob/main/luma_UI_test_framework/pictures/ALLURE%20REPORT.png" />
+
+## В отчете для каждого теста указана мета информация, а также приложены результаты прохождения: видео, html страницы, скриншот после прохождения, логи браузера.
+<img align="center" src="https://github.com/Lexzender/luma_UI_test_framework/blob/main/luma_UI_test_framework/pictures/allure_Behaviors.png" />
+
+## Пример прохождения UI-теста
+<video align="center" src="https://github.com/Lexzender/luma_UI_test_framework/blob/main/luma_UI_test_framework/pictures/UI_TEST.mp4" />
+
+
+
