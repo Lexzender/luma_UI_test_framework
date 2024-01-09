@@ -74,5 +74,5 @@ https://github.com/Lexzender/luma_UI_test_framework/assets/106764385/89c32aa1-79
 
 ---
 ## Интеграция с Jira
-
+<img align="center" src="https://github.com/Lexzender/luma_UI_test_framework/blob/main/luma_UI_test_framework/pictures/Jira.png" />
 
