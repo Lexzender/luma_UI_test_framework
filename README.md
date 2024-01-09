@@ -51,7 +51,8 @@ pytest -s -v --browser_version=${BROWSER_VERSION}  --base_url=${BASE_URL} --brow
 <img align="center" src="https://github.com/Lexzender/luma_UI_test_framework/blob/main/luma_UI_test_framework/pictures/allure_Behaviors.png" />
 
 ## Пример прохождения UI-теста
-<video align="center" src="https://github.com/Lexzender/luma_UI_test_framework/blob/main/luma_UI_test_framework/pictures/UI_TEST.mp4" />
+https://github.com/Lexzender/luma_UI_test_framework/assets/106764385/89c32aa1-7984-41a8-954f-352cd72c3bc9
+
 
 
 
