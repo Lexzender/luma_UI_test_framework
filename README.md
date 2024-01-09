@@ -37,4 +37,7 @@ pytest -s -v --browser_version=${BROWSER_VERSION}  --base_url=${BASE_URL} --brow
 
 1) Открыть [проект](https://jenkins.autotests.cloud/job/luma_UI_test_framework/)
 2) Нажать "Build with Parameters"
-3) Заполнить параметры
+3) Заполнить параметры 
+4) Нажать "Build"
+<img align="center" src="https://github.com/Lexzender/luma_UI_test_framework/blob/main/luma_UI_test_framework/pictures/jenkins.png" />
+
