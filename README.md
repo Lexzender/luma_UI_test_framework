@@ -56,6 +56,11 @@ https://github.com/Lexzender/luma_UI_test_framework/assets/106764385/89c32aa1-79
 ---
 ## Нотификация в Telegram
 После прохождения тестов результаты будут отправлены в Telegram
+<img align="center" src="https://github.com/Lexzender/luma_UI_test_framework/blob/main/luma_UI_test_framework/pictures/Telegram_mF4OU8TK9I.png" />
+
+---
+## Интеграция с Allure TestOps
+Тест кейсы
 
 
 
