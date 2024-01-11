@@ -34,7 +34,7 @@ pytest -s -v --browser_version=${BROWSER_VERSION}  --base_url=${BASE_URL} --brow
 ```
 Или в Jenkins
 
-### <code><img width="5%" title="Jenkins" src="https://github.com/Lexzender/Lexzender/blob/main/images/jenkins-original.svg"></code> Запуск проекта в Jenkins
+### <code><img width="3%" title="Jenkins" src="https://github.com/Lexzender/Lexzender/blob/main/images/jenkins-original.svg"></code> Запуск проекта в Jenkins
 
 1) Открыть [проект](https://jenkins.autotests.cloud/job/luma_UI_test_framework/)
 2) Нажать "Build with Parameters"
@@ -44,7 +44,7 @@ pytest -s -v --browser_version=${BROWSER_VERSION}  --base_url=${BASE_URL} --brow
 
 ---
 
-## <code><img width="5%" title="Allure_Report" src="https://github.com/Lexzender/Lexzender/blob/main/images/Allure_Report.png"></code> Allure report
+## <code><img width="3%" title="Allure_Report" src="https://github.com/Lexzender/Lexzender/blob/main/images/Allure_Report.png"></code> Allure report
 ### После прохождения тестов результаты можно посмотреть в Allure отчете
 <img align="center" src="https://github.com/Lexzender/luma_UI_test_framework/blob/main/luma_UI_test_framework/pictures/ALLURE%20REPORT.png" />
 
@@ -55,12 +55,12 @@ pytest -s -v --browser_version=${BROWSER_VERSION}  --base_url=${BASE_URL} --brow
 <img align="center" src="https://github.com/Lexzender/luma_UI_test_framework/blob/main/luma_UI_test_framework/pictures/UI_TEST.gif" />
 
 ---
-## <code><img width="5%" title="Telegram" src="https://github.com/Lexzender/Lexzender/blob/main/images/tg.png"></code> Нотификация в Telegram
+## <code><img width="3%" title="Telegram" src="https://github.com/Lexzender/Lexzender/blob/main/images/tg.png"></code> Нотификация в Telegram
 После прохождения тестов результаты будут отправлены в Telegram
 <img align="center" src="https://github.com/Lexzender/luma_UI_test_framework/blob/main/luma_UI_test_framework/pictures/Telegram_mF4OU8TK9I.png" />
 
 ---
-## <code><img width="5%" title="AllureTestOps.png" src="https://github.com/Lexzender/Lexzender/blob/main/images/AllureTestOps.png"></code> Интеграция с Allure TestOps
+## <code><img width="3%" title="AllureTestOps.png" src="https://github.com/Lexzender/Lexzender/blob/main/images/AllureTestOps.png"></code> Интеграция с Allure TestOps
 ### Тест кейсы
 <img align="center" src="https://github.com/Lexzender/luma_UI_test_framework/blob/main/luma_UI_test_framework/pictures/test%20cases.png" />
 
@@ -74,6 +74,6 @@ pytest -s -v --browser_version=${BROWSER_VERSION}  --base_url=${BASE_URL} --brow
 <img align="center" src="https://github.com/Lexzender/luma_UI_test_framework/blob/main/luma_UI_test_framework/pictures/test_results.png" />
 
 ---
-## <code><img width="5%" title="Jira.png" src="https://github.com/Lexzender/Lexzender/blob/main/images/jira-original.svg"></code> Интеграция с Jira
+## <code><img width="3%" title="Jira.png" src="https://github.com/Lexzender/Lexzender/blob/main/images/jira-original.svg"></code> Интеграция с Jira
 <img align="center" src="https://github.com/Lexzender/luma_UI_test_framework/blob/main/luma_UI_test_framework/pictures/Jira.png" />
 
